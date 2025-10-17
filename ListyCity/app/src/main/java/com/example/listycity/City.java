@@ -18,10 +18,19 @@ public class City implements Comparable<City>{
         return this.province;
     }
 
+
+    /**
+     * Compares a city with another city to sort them
+     * @return
+     * Returns an integer for that city
+     */
+
     @Override
     public int compareTo(City o) {
         City city = (City) o;
         return this.city.compareTo(city.getCityName()); // this.city refers to the city name
     }
+
+
 
 }
